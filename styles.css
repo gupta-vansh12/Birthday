@@ -1,0 +1,66 @@
+
+  .big-text {
+    font-size: 36px; /* Adjust the font size as needed */
+    text-align: center;
+    color: aliceblue;
+    height: 100%;
+    margin: 5%;
+    
+}
+  .animated {
+    animation: appear 1s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .gallery {
+    perspective: 1000px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust the spacing between rows */
+  }
+  
+  .image {
+    position: relative;
+    width: 200px; /* Adjust the width of each image */
+    height: 200px; /* Adjust the height of each image */
+    margin: 0 5px; /* Adjust the spacing between images */
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .image:hover {
+    transform: rotateY(180deg);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .paragraph{
+    color: aliceblue;
+    border: 5px solid seashell;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  #audio-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
